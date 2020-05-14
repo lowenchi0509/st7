@@ -92,14 +92,24 @@ WSGI_APPLICATION = 'students.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddseusqos2uvf0',
+        'USER': 'pfrniyxfjkyntv',
+        'PASSWORD': '3309da5d521dbe7f9cc96410a6b4c7049e5064669242fd4881eda8cd2758323e',
+        'HOST': 'ec2-34-234-228-127.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
